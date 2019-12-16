@@ -1,0 +1,114 @@
+.grid_container
+{
+	display: block;
+}
+.grid_container>div
+{
+	color: black;
+	text-align: center;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.courses
+{
+	display: grid;
+	justify-content:space-around;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+.courses>div
+{
+	max-width: 160px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border:none;
+	font-weight: 600;
+	background-color: #C4C2C2;
+	border-radius: 10%;
+}
+
+@media screen and (max-width: 768px)
+{
+	.courses
+{
+	display: grid;
+	justify-content:space-around;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto;
+}
+.courses>div
+{
+	max-width: 150px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border:none;
+	font-weight: 600;
+	background-color: #C4C2C2;
+	border-radius: 10%;
+}
+}
+
+@media screen and (max-width: 425px)
+{
+	.courses
+	{
+		display: grid;
+		justify-content:space-around;
+		grid-gap: 10px;
+		grid-template-columns: auto auto auto;
+	}
+	.courses>div
+	{
+		max-width: 150px;
+		padding-right: 5px;
+		padding-left: 5px;
+		border:none;
+		font-weight: 600;
+		background-color: #C4C2C2;
+		border-radius: 10%;
+	}
+}
+
+@media screen and (max-width: 375px)
+{
+	.courses
+	{
+		display: grid;
+		justify-content:space-around;
+		grid-gap: 10px;
+		grid-template-columns: auto auto;
+	}
+	.courses>div
+	{
+		max-width: 150px;
+		padding-right: 5px;
+		padding-left: 5px;
+		border:none;
+		font-weight: 600;
+		background-color: #C4C2C2;
+		border-radius: 10%;
+	}
+
+}
+
+@media screen and (max-width: 320px)
+{
+	.courses
+	{
+		display: grid;
+		justify-content:space-around;
+		grid-gap: 10px;
+		grid-template-columns: auto auto;
+	}
+	.courses>div
+	{
+		max-width: 150px;
+		padding-right: 5px;
+		padding-left: 5px;
+		border:none;
+		font-weight: 600;
+		background-color: #C4C2C2;
+		border-radius: 10%;
+	}
+}
