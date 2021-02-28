@@ -68,15 +68,7 @@
 	<script>
 		$(document).ready(function() 
 		{
-			  //page is not so responsive for width < 768px
-			  if (screen.width<=767)
-			  {
-				  window.open("./cv/cv-en.pdf",target="_self");
-			  }
-			  else // for screen >= 768px
-			  {
-				document.getElementsByTagName("html")[0].style.visibility = "visible";
-			  }
+			document.getElementsByTagName("html")[0].style.visibility = "visible";
 		});
 	</script>
 	<section class="intro-section">
