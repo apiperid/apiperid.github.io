@@ -34,6 +34,10 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<style type="text/css">
 		html 
 		{ 
@@ -54,10 +58,6 @@
 			display: grid;
 			grid-template-columns: auto;
 		}
-		body
-		{
-			overflow-x: hidden;
-		}
 		.mail:hover
 		{
 			color:blue;
@@ -68,9 +68,11 @@
 	<script>
 		$(document).ready(function() 
 		{
+			AOS.init();
 			document.getElementsByTagName("html")[0].style.visibility = "visible";
 		});
 	</script>
+
 	<section class="intro-section">
 		<div class="container-fluid">
 		
@@ -151,9 +153,8 @@
 		</div><!-- container -->
 	</section><!-- intro-section -->
 	
-	
 	<section class="about-section section">
-		<div class="container-fluid">
+		<div data-aos="zoom-in" class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
 					<div class="heading">
@@ -190,7 +191,7 @@
 	</section><!-- about-section -->
 
 	<section id="work-experience" class="education-section section">
-			<div class="container-fluid">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -209,6 +210,7 @@
 								<div style="float: left;" class="font-weight-bold"><i>December 2020 - Today</i></div>
 								<div style="float: right;" class="font-weight-bold"><i>Kilkis , GR</i></div>
 								<p style="float: left;text-align: left;">
+									&bull;Formatting PCs<br>
 									&bull;Monitoring devices using WhatsUpGold application<br>
 									&bull;Backing up servers<br>
 									&bull;Exporting and analyzing servers data (response times,traffic etc)<br>
@@ -253,10 +255,10 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
 	<section id="education" class="education-section section">
-			<div class="container-fluid">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -289,10 +291,10 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
-		<section id="skills" class="education-section section">
-			<div class="container-fluid">
+	<section id="skills" class="education-section section">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -635,10 +637,10 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
-		<section id="projects" class="education-section section">
-			<div class="container-fluid">
+	<section id="projects" class="education-section section">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -660,10 +662,10 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
-		<section id="publications" class="education-section section">
-			<div class="container-fluid">
+	<section id="publications" class="education-section section">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -691,10 +693,10 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
-		<section id="certifications" class="education-section section">
-			<div class="container-fluid">
+	<section id="certifications" class="education-section section">
+			<div data-aos="zoom-in" class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 center-text">
 						<div class="heading">
@@ -782,7 +784,7 @@
 				</div><!-- row -->
 			</div><!-- container -->
 			
-		</section><!-- education-section -->
+	</section><!-- education-section -->
 
 	<footer>
 		<p class="copyright">
