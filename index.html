@@ -115,7 +115,7 @@
 
 				<!-- info -->
 				<h1 class="mb-2 mt-0">Anestis Piperidis</h1>
-				<span class="text-rotating">I'm a Software Engineer, I'm a Full-Stack developer, I'm an IT Support Officer</span>
+				<span class="text-rotating">I'm a Software Engineer, I'm a Full-Stack developer</span>
 
 			</div>
 
@@ -1086,6 +1086,26 @@
 					<div class="certification blog-item rounded bg-white shadow-dark">
 						<div class="thumb">
 							<a href="javacsript:void(0);">
+								<span class="category">May 2021</span>
+							</a>
+							<center>
+								<a href="javascript:void(0);">
+									<img src="images/certifications/udemy.png" width="70%" alt="udemy" />
+								</a>
+							</center>
+						</div>
+						<div class="details">
+							<h6 class="my-0 title">The Git & Github Bootcamp</h6>
+						</div>
+					</div>
+				</div>
+
+				<!-- Certiification item-->
+				<div class="col-md-4 mb-4 row-1">
+					<!-- blog item -->
+					<div class="certification blog-item rounded bg-white shadow-dark">
+						<div class="thumb">
+							<a href="javacsript:void(0);">
 								<span class="category">March 2020</span>
 							</a>
 							<center>
@@ -1121,7 +1141,7 @@
 				</div>
 
 				<!-- Certiification item-->
-				<div class="col-md-4 mb-4 row-1">
+				<div class="col-md-4 mb-4 row-2">
 					<!-- blog item -->
 					<div class="certification blog-item rounded bg-white shadow-dark">
 						<div class="thumb">
@@ -1181,7 +1201,7 @@
 				</div>
 
 				<!-- Certiification item-->
-				<div class="col-md-4 mb-4 row-2">
+				<div class="col-md-4 mb-4 row-3">
 					<!-- blog item -->
 					<div class="certification blog-item rounded bg-white shadow-dark">
 						<div class="thumb">
@@ -1241,7 +1261,7 @@
 				</div>
 
 				<!-- Certiification item-->
-				<div class="col-md-4 mb-4 row-3">
+				<div class="col-md-4 mb-4 row-4">
 					<!-- blog item -->
 					<div class="certification blog-item rounded bg-white shadow-dark">
 						<div class="thumb">
@@ -1301,7 +1321,7 @@
 				</div>
 
 				<!-- Certiification item-->
-				<div class="col-md-4 mb-4 row-4">
+				<div class="col-md-4 mb-4 row-5">
 					<!-- blog item -->
 					<div class="certification blog-item rounded bg-white shadow-dark">
 						<div class="thumb">
@@ -1507,6 +1527,7 @@
     	$(".certifications-list .row-2").hide();
     	$(".certifications-list .row-3").hide();
     	$(".certifications-list .row-4").hide();
+		$(".certifications-list .row-5").hide();
 
     	$(".skills-as-text").toggle();
 
@@ -1526,7 +1547,7 @@
     {
     	certifications_row_to_be_shown ++;
     	$(`.certifications-list .row-${certifications_row_to_be_shown}`).show(1000);
-    	if(certifications_row_to_be_shown == 4){$("#certifications-load-more-btn").hide();}
+    	if(certifications_row_to_be_shown == 5){$("#certifications-load-more-btn").hide();}
 	});
 
 	$( ".modal-footer .btn" ).click(function() 
